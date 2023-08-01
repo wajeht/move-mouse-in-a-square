@@ -1,11 +1,14 @@
 {
   "name": "mouse",
   "version": "0.0.1",
-  "description": "",
+  "description": "move mouse in a square",
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "install": "npm install -g ."
+  },
+  "bin": {
+    "mouse": "./bin/mouse.js"
   },
   "keywords": [],
   "author": "wajeht",

@@ -1,34 +1,38 @@
-#!/usr/bin/env node
-
 import { mouse, left, right, up, down } from "@nut-tree/nut-js";
 
-const moveMouse = async (direction, distance) => {
-  try {
-    await mouse.move(direction(distance));
-  } catch (e) {
-    console.error(`Error moving the mouse: ${e}`);
+export default class MouseMover {
+  constructor(size, delay) {
+    this.size = size;
+    this.delay = delay;
   }
-};
 
-const moveInSquare = async (size, delay) => {
-  await moveMouse(left, size);
-  await new Promise((resolve) => setTimeout(resolve, delay));
-  await moveMouse(up, size);
-  await new Promise((resolve) => setTimeout(resolve, delay));
-  await moveMouse(right, size);
-  await new Promise((resolve) => setTimeout(resolve, delay));
-  await moveMouse(down, size);
-  await new Promise((resolve) => setTimeout(resolve, delay));
-};
-
-const main = async () => {
-  const size = 50;
-  const delay = 1000; // milliseconds
-
-  console.log("Moving the mouse in a square...");
-  while (true) {
-    await moveInSquare(size, delay);
+  async moveMouse(direction, distance) {
+    try {
+      await mouse.move(direction(distance));
+    } catch (e) {
+      console.error(`Error moving the mouse: ${e}`);
+    }
   }
-};
 
-main().catch((e) => console.error(`Error in main: ${e}`));
+  async moveInSquare() {
+    await this.moveMouse(left, this.size);
+    await this.delayOperation(this.delay);
+    await this.moveMouse(up, this.size);
+    await this.delayOperation(this.delay);
+    await this.moveMouse(right, this.size);
+    await this.delayOperation(this.delay);
+    await this.moveMouse(down, this.size);
+    await this.delayOperation(this.delay);
+  }
+
+  async delayOperation(delay) {
+    return new Promise((resolve) => setTimeout(resolve, delay));
+  }
+
+  async start() {
+    console.log("Moving the mouse in a square..., (press Ctrl-C to stop)");
+    while (true) {
+      await this.moveInSquare();
+    }
+  }
+}
