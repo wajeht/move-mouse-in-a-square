@@ -1,4 +1,4 @@
-import { mouse, left, right, up, down } from "@nut-tree/nut-js";
+import { mouse, left, right, up, down, keyboard } from "@nut-tree/nut-js";
 
 export default class MouseMover {
   constructor(size, delay) {
@@ -11,6 +11,16 @@ export default class MouseMover {
       await mouse.move(direction(distance));
     } catch (e) {
       console.error(`Error moving the mouse: ${e}`);
+    }
+  }
+
+  async pressSomeKey() {
+    try {
+      const keys = ["Escape", "Tab", "Shift", "Alt", "CapsLock", "ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"];
+      const key = keys[Math.floor(Math.random() * keys.length)];
+      await keyboard.releaseKey(key);
+    } catch (e) {
+      console.error(`Error pressing the mouse: ${e}`);
     }
   }
 
@@ -32,6 +42,7 @@ export default class MouseMover {
   async start() {
     console.log("Moving the mouse in a square..., (press Ctrl-C to stop)");
     while (true) {
+      await this.pressSomeKey();
       await this.moveInSquare();
     }
   }
