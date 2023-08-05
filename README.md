@@ -1,5 +1,5 @@
-# 🐁 Move mouse in a square
-why? why not?
+# 🐁 Mouse
+Move mouse in a square - why? why not?
 
 # 🚦 Installation
 ```bash
