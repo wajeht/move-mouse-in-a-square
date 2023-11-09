@@ -1,9 +1,8 @@
 # [1.1.0](https://github.com/wajeht/mouse/compare/v1.0.0...v1.1.0) (2023-11-09)
 
-
 ### Features
 
-* udpate readme ([4b7bcf6](https://github.com/wajeht/mouse/commit/4b7bcf6492c4d9c66ac5d33b25428e712e638acf))
+- udpate readme ([4b7bcf6](https://github.com/wajeht/mouse/commit/4b7bcf6492c4d9c66ac5d33b25428e712e638acf))
 
 # 1.0.0 (2023-11-09)
 
