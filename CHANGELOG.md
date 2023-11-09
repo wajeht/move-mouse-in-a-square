@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/wajeht/mouse/compare/v1.1.0...v1.1.1) (2023-11-09)
+
+
+### Bug Fixes
+
+* remove husky ([5cf771d](https://github.com/wajeht/mouse/commit/5cf771de1da8382dc2ed593fa18eeb9d44b61295))
+
 # [1.1.0](https://github.com/wajeht/mouse/compare/v1.0.0...v1.1.0) (2023-11-09)
 
 ### Features
