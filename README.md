@@ -18,6 +18,7 @@ $ npm install -g @wajeht/mouse
 
 ```bash
 $ mouse
+# Moving the mouse in a square..., (press Ctrl + C to stop)
 ```
 
 # © License
