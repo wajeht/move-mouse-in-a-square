@@ -1,6 +1,6 @@
 {
 	"name": "@wajeht/mouse",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"description": "move mouse in a square",
 	"type": "module",
 	"main": "index.js",
