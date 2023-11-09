@@ -1,19 +1,25 @@
 {
-  "name": "mouse",
-  "version": "0.0.1",
-  "description": "move mouse in a square",
-  "type": "module",
-  "main": "index.js",
-  "scripts": {
-    "install": "npm install -g ."
-  },
-  "bin": {
-    "mouse": "./bin/mouse.js"
-  },
-  "keywords": [],
-  "author": "wajeht",
-  "license": "MIT",
-  "dependencies": {
-    "@nut-tree/nut-js": "^3.1.1"
-  }
+	"name": "@wajeht/mouse",
+	"version": "0.0.1",
+	"description": "move mouse in a square",
+	"type": "module",
+	"main": "index.js",
+	"scripts": {
+		"format:check": "prettier --check .",
+		"format": "prettier --write ."
+	},
+	"bin": {
+		"mouse": "./src/index.js"
+	},
+	"keywords": [
+		"mouse"
+	],
+	"author": "wajeht",
+	"license": "MIT",
+	"dependencies": {
+		"@nut-tree/nut-js": "^3.1.2"
+	},
+	"devDependencies": {
+		"prettier": "^3.0.3"
+	}
 }
