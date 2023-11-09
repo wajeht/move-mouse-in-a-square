@@ -1,17 +1,17 @@
 # 🐁 Mouse
 
+![npm](https://img.shields.io/npm/dw/%40wajeht%2Fmouse)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/wajeht/type/blob/main/LICENSE) [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/wajeht/mouse) [![npm](https://img.shields.io/npm/v/%40wajeht%2Fmouse)](https://www.npmjs.com/package/@wajeht/mouse)
+
 Move mouse in a square - why? why not?
 
-# 🚦 Installation
+## 🛠️ Installation
+
+> [!WARNING]
+> Before installing **mouse**, please ensure that you have Node.js version 20 or higher installed on your system.
 
 ```bash
-$ npm install -g . # or `npm link mouse`
-```
-
-if you get an error about permissions, try this:
-
-```bash
-https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally
+$ npm install -g @wajeht/mouse
 ```
 
 # 🚀 Usage
@@ -19,3 +19,7 @@ https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packa
 ```bash
 $ mouse
 ```
+
+# © License
+
+Distributed under the MIT License © wajeht. See [LICENSE](./LICENSE) for more information.
