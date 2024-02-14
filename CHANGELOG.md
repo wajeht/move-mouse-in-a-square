@@ -1,9 +1,8 @@
 # [1.2.0](https://github.com/wajeht/mouse/compare/v1.1.1...v1.2.0) (2024-02-14)
 
-
 ### Features
 
-* **mouse-mover:** add methods to move mouse and press keys ([d6d2e12](https://github.com/wajeht/mouse/commit/d6d2e121c3f01ca224fa1874b745a0ea93977b00))
+- **mouse-mover:** add methods to move mouse and press keys ([d6d2e12](https://github.com/wajeht/mouse/commit/d6d2e121c3f01ca224fa1874b745a0ea93977b00))
 
 ## [1.1.1](https://github.com/wajeht/mouse/compare/v1.1.0...v1.1.1) (2023-11-09)
 
