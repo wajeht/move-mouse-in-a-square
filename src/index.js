@@ -1,6 +1,12 @@
 #! /usr/bin/env node
 
-import MouseMover from './lib/mouse-mover.js';
+import { mouse, left, right, up, down, keyboard } from '@nut-tree/nut-js';
+import { MouseMover } from './lib/mouse-mover.js';
 
-const mouse = new MouseMover(50, 1000);
-await mouse.start();
+const m = new MouseMover(50, 1000, mouse, keyboard, {
+	left,
+	right,
+	up,
+	down,
+});
+await m.start();

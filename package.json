@@ -3,8 +3,9 @@
 	"version": "1.1.1",
 	"description": "move mouse in a square",
 	"type": "module",
-	"main": "index.js",
+	"main": "./src/index.js",
 	"scripts": {
+		"test": "vitest",
 		"format:check": "prettier --check .",
 		"format": "prettier --write .",
 		"publish": "chmod +x ./src/scripts/publish.sh && ./src/scripts/publish.sh"
@@ -42,6 +43,7 @@
 		"@semantic-release/npm": "^11.0.2",
 		"@semantic-release/release-notes-generator": "^12.1.0",
 		"prettier": "^3.2.5",
-		"semantic-release": "^22.0.12"
+		"semantic-release": "^22.0.12",
+		"vitest": "^1.2.2"
 	}
 }
