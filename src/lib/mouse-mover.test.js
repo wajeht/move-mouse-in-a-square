@@ -23,7 +23,7 @@ describe('MouseMover', () => {
         mouseMover = new MouseMover(size, delay, mockMouse, mockKeyboard, mockDirections);
     });
 
-    it.todo('should move the mouse in the specified direction and distance', async () => {
+    it.skip('should move the mouse in the specified direction and distance', async () => {
         const direction = 'left';
         await mouseMover.moveMouse(direction, size);
         expect(mockDirections[direction]).toHaveBeenCalledWith(size);
