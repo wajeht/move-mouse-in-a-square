@@ -8,7 +8,7 @@ Move mouse in a square - why? why not?
 ## 🛠️ Installation
 
 > [!WARNING]
-> Before installing **mouse**, please ensure that you have Node.js version 20 or higher installed on your system.
+> Before installing **mouse**, please ensure that you have Node.js version 20 or higher installed on your system. If you're also on Mac, make sure to enable whatever Terminal app to accessibility via `Privacy & Security` > `Accessibility` > `<your terminal app>`
 
 ```bash
 $ npm install -g @wajeht/mouse
