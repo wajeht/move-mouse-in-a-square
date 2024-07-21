@@ -14,13 +14,13 @@ Move mouse in a square - why? why not?
 $ npm install -g @wajeht/mouse
 ```
 
-# 🚀 Usage
+## 🚀 Usage
 
 ```bash
 $ mouse
 # Moving the mouse in a square..., (press Ctrl + C to stop)
 ```
 
-# © License
+## © License
 
 Distributed under the MIT License © wajeht. See [LICENSE](./LICENSE) for more information.
